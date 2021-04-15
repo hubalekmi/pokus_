@@ -243,6 +243,10 @@ def random_transform(
     return np.linalg.multi_dot([
         random_rotation(min_rotation, max_rotation, prng),
         random_translation(min_translation, max_translation, prng),
+        
+        random_rotation(min_rotation2, max_rotation2, prng),
+        random_translation(min_translation2, max_translation2, prng),
+        
         random_shear(min_shear, max_shear, prng),
         random_scaling(min_scaling, max_scaling, prng),
         random_flip(flip_x_chance, flip_y_chance, prng)
