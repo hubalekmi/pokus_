@@ -204,12 +204,6 @@ def random_transform(
     max_rotation=0,
     min_translation=(0, 0),
     max_translation=(0, 0),
-    
-    min_rotation2=0,
-    max_rotation2=0,
-    min_translation2=(0, 0),
-    max_translation2=(0, 0),
-    
     min_shear=0,
     max_shear=0,
     min_scaling=(1, 1),
