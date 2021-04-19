@@ -245,10 +245,11 @@ def create_generators(args, preprocess_image):
                       
             min_shear=0,   #change disable
             max_shear=0,   #change disable
-            min_scaling=(1, 1),  #change disalbe
-            max_scaling=(1, 1),  #change disable
-            flip_x_chance=0.5,   #change
-            flip_y_chance=0.5,   #change
+            
+            min_scaling=(0.9, 0.9),  #change to same scale on both sides
+            max_scaling=(1.1, 1.1),  #change 
+            flip_x_chance=0.8,   #change
+            flip_y_chance=0.8,   #change
         )
         visual_effect_generator = random_visual_effect_generator(
             contrast_range=(0.9, 1.1),
