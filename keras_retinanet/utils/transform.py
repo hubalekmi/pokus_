@@ -154,7 +154,7 @@ def scaling(factor):
     """
     return np.array([
         [factor[0], 0, 0],
-        [0, factor[1], 0],
+        [0, factor[0], 0], #change to get same scale from factor[1]
         [0, 0, 1]
     ])
 
