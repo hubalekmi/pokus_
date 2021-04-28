@@ -252,10 +252,10 @@ def create_generators(args, preprocess_image):
             flip_y_chance=0.8,   #change
         )
         visual_effect_generator = random_visual_effect_generator(
-            contrast_range=(0.9, 1.1),
-            brightness_range=(-.1, .1),
-            hue_range=(-0.05, 0.05),
-            saturation_range=(0.95, 1.05)
+            contrast_range=(0.85, 1.15),  #change
+            brightness_range=(-.15, .15), #change
+            hue_range=(-0.1, 0.1), #change
+            saturation_range=(0.90, 1.1) #change
         )
     else:
         transform_generator = random_transform_generator(flip_x_chance=0.5)
